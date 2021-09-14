@@ -3,5 +3,11 @@ package main
 import "fmt"
 
 func main() {
-	fmt.Println("Hello Go!")
+	var (
+		hello, name string // объявление нескольких переменных
+		punct       = "!"  // не явная типизация
+	)
+	name = "Go"
+	hello = "Hello " + name + punct
+	fmt.Println(hello)
 }
